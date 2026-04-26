@@ -689,22 +689,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "BF369A1B82C8E7239FF4BED91322859A50845BFB95985737B804FDD004DB7985",
+            "gdnPrimarySignature": "339FA9C7B4EE72966D83A823196115C5D65FA3A9B06CBE658718B42B7FEC8DEE",
             "gdnAlternativeSignature0": "9D01EE1DA2A002A98C161DC3BCFD64688DE04C2B6B94FB59ED3A684A7ECC620B"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "BF369A1B82C8E7239FF4BED91322859A50845BFB95985737B804FDD004DB7985",
+            "gdnPrimarySignature": "339FA9C7B4EE72966D83A823196115C5D65FA3A9B06CBE658718B42B7FEC8DEE",
             "gdnAlternativeSignature0": "9D01EE1DA2A002A98C161DC3BCFD64688DE04C2B6B94FB59ED3A684A7ECC620B"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : NonCompliant : GHActionsWorkflows - SecurityAndAnalysis.SecretScanning.Status Equals enabled (Actual: disabled)\nAnyOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (gitleaks|spectral|SpectralOps|git-secrets|git secrets|gittyleaks|detect-secrets|gitguardian|ggshield|trufflehog|trufflesecurity|githound|Semgrep) (Actual: -Workflow# .github/workflows/ci.yml [[##STARTci.yml]] name: \"CI/CD Pipeline\"\non:\n  push:\n    branches-ignore:\n      - l10n_develop\n      - gh-pages\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'monitoring/grafana-dashboard.json'\n      - 'screenshots/**'\n    tags-ignore:\n      - '*'\n  pull_request:\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'data/static/i18n/*.json'\n      - 'frontend/src/assets/i18n/*.json'\nenv:\n  NODE_DEFAULT_VERSION: 22\n  NODE_OPTIONS: \"--max_old_space_size=4096\"\n  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0'\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - name: \"Check out Git repository\"\n        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2\n      - name: \"Use Node.js 22\"\n        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af #v4.1.0\n        with:\n          node-version: ${{ env.NODE_DEFAULT_VERSION }}\n      - name: \"Install application minimalistically\"\n        run: |\n          npm inst ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -738,22 +738,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "2A75745AC7E692419CEAF3AA296DDAA4C66E504157F1654223926623F52FC6E5",
+            "gdnPrimarySignature": "550BBDEC48862851CA8D2C48AA33FAE152C4557CEEE387BD415CD35E67A5F03E",
             "gdnAlternativeSignature0": "7F837905DDE10BB07F9161D38CE23E024051493021DC66F710B8B3A01A44C259"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "2A75745AC7E692419CEAF3AA296DDAA4C66E504157F1654223926623F52FC6E5",
+            "gdnPrimarySignature": "550BBDEC48862851CA8D2C48AA33FAE152C4557CEEE387BD415CD35E67A5F03E",
             "gdnAlternativeSignature0": "7F837905DDE10BB07F9161D38CE23E024051493021DC66F710B8B3A01A44C259"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : NonCompliant : GHActionsWorkflows - SecurityAndAnalysis.SecretScanning.Status Equals enabled (Actual: disabled)\nAnyOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (gitleaks|spectral|SpectralOps|git-secrets|git secrets|gittyleaks|detect-secrets|gitguardian|ggshield|trufflehog|trufflesecurity|githound|Semgrep) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -787,22 +787,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "3192CF5CA5AAFA42EB99F2EC52ECD0A54CA9EEBE34C7B6273B2392B63D87B8ED",
+            "gdnPrimarySignature": "B7A0CE9EF1E4920163B28D23793B7C607610E61A62D83CAA9B3A9B67F1795677",
             "gdnAlternativeSignature0": "E22CE45476A16B44BE0F95B3F1E79AFB66530291D22FD6A78B2F0F0C3D49C5E6"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "3192CF5CA5AAFA42EB99F2EC52ECD0A54CA9EEBE34C7B6273B2392B63D87B8ED",
+            "gdnPrimarySignature": "B7A0CE9EF1E4920163B28D23793B7C607610E61A62D83CAA9B3A9B67F1795677",
             "gdnAlternativeSignature0": "E22CE45476A16B44BE0F95B3F1E79AFB66530291D22FD6A78B2F0F0C3D49C5E6"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : NonCompliant : GHActionsWorkflows - SecurityAndAnalysis.DependabotSecurityUpdates.Status Equals enabled (Actual: disabled)\nAnyOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (dependency-review-action|AdvancedSecurity-Dependency-Scanning|cyclonedx|dependencytrack|dependency-track|dependency-check|WhiteSource|Mend|Veracode|Snyk|Checkmarx|CxSCA|checkmarx/ast-github-action|Synopsys|SynopsysDetectTask|Spectral|OSV-Scanner|Semgrep|JFrog|osv-scanner-action) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -836,22 +836,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "1C0E5C490375FF0117A6AEFF9AF88888924DD4434A69C4C6C30D553DF8B5F947",
+            "gdnPrimarySignature": "5DE8B8B339E63EF125F4F4E967F1A6CE7D232D4298C86F6E8CC19341AD2B3B70",
             "gdnAlternativeSignature0": "C98B88B222A53E3FC0856A65A5F66B497CDAABE3E9B3647F4776EA9576E8F136"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "1C0E5C490375FF0117A6AEFF9AF88888924DD4434A69C4C6C30D553DF8B5F947",
+            "gdnPrimarySignature": "5DE8B8B339E63EF125F4F4E967F1A6CE7D232D4298C86F6E8CC19341AD2B3B70",
             "gdnAlternativeSignature0": "C98B88B222A53E3FC0856A65A5F66B497CDAABE3E9B3647F4776EA9576E8F136"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (codeql-action|AdvancedSecurity-Codeql-Analyze|microsoft/security-devops-action|sonarqube-scan-action|sonarcloud-github-action|WhiteSource|Mend|Veracode|Snyk|Checkmarx|CxFlow|checkmarx/ast-github-action|Semgrep|Fortify|Synopsys|coverity|HCL AppScan|appscan-sast|DeepScan|BinSkim|bandit|python-bandit-scan|JFrog|CodeThreat|codescan-scanner-action|ossar-action|contrastscan-action|apisec-run-scan|codacy-analysis-cli-action|pyre-action|msvc-code-analysis-action) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -885,22 +885,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "60874EDA376E5FA2840DDF658D1618DFFA484331A1F2CE2A4FD3195516CDF8CD",
+            "gdnPrimarySignature": "A988290FE664ED36046D6E4AC710D3DE5101363F6D80897DFEF7067315C57E3A",
             "gdnAlternativeSignature0": "2E0C0A4CDAA65C1FD572F1BC100A431E4FF0BDC77393A1A0F38C595D9201AF8A"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "60874EDA376E5FA2840DDF658D1618DFFA484331A1F2CE2A4FD3195516CDF8CD",
+            "gdnPrimarySignature": "A988290FE664ED36046D6E4AC710D3DE5101363F6D80897DFEF7067315C57E3A",
             "gdnAlternativeSignature0": "2E0C0A4CDAA65C1FD572F1BC100A431E4FF0BDC77393A1A0F38C595D9201AF8A"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (trivy|aqua|aquasec|snyk/actions/docker|grype|clair|sysdig|qualys|aquasecurity|tfsec-sarif-action|trivy-action) (Actual: -Workflow# .github/workflows/upload-sarif.yml [[##STARTupload-sarif.yml]] # GitHub Actions workflow to upload SARIF files to GitHub Code Scanning\n# This enables viewing DevOps Shield security assessment results in the Security tab\n\nname: Upload SARIF to Code Scanning\n\non:\n  push:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  pull_request:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  workflow_dispatch:\n    inputs:\n      sarif_file:\n        description: 'Path to SARIF file to upload'\n        required: false\n        default: 'sarif-results/devops-shield-assessment.sarif'\n      category:\n        description: 'Category for Code Scanning'\n        required: false\n        default: 'devops-shield-sarif-export-test'\n\npermissions:\n  contents: read\n  security-events: write\n  actions: read\n\njobs:\n  upload-sarif:\n    name: Upload SARIF\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout repos ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -934,22 +934,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9F5270F6A47CD48690B0281C719623C46E0B9C700D7B7BEA0161A8FDE8177CE0",
+            "gdnPrimarySignature": "92568D4289587F918DF6CF68E4D5B64DA1DFE1FDB856020187B3BF31F2ED802B",
             "gdnAlternativeSignature0": "CFF4468941F73EE9035CBFE0FA1EDC5F0E734EB62E74C0BBF5F0FD1FDD2E94E9"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9F5270F6A47CD48690B0281C719623C46E0B9C700D7B7BEA0161A8FDE8177CE0",
+            "gdnPrimarySignature": "92568D4289587F918DF6CF68E4D5B64DA1DFE1FDB856020187B3BF31F2ED802B",
             "gdnAlternativeSignature0": "CFF4468941F73EE9035CBFE0FA1EDC5F0E734EB62E74C0BBF5F0FD1FDD2E94E9"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (trivy|aqua|aquasec|snyk/actions/docker|grype|clair|sysdig|qualys|aquasecurity|tfsec-sarif-action|trivy-action) (Actual: -Workflow# .github/workflows/ci.yml [[##STARTci.yml]] name: \"CI/CD Pipeline\"\non:\n  push:\n    branches-ignore:\n      - l10n_develop\n      - gh-pages\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'monitoring/grafana-dashboard.json'\n      - 'screenshots/**'\n    tags-ignore:\n      - '*'\n  pull_request:\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'data/static/i18n/*.json'\n      - 'frontend/src/assets/i18n/*.json'\nenv:\n  NODE_DEFAULT_VERSION: 22\n  NODE_OPTIONS: \"--max_old_space_size=4096\"\n  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0'\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - name: \"Check out Git repository\"\n        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2\n      - name: \"Use Node.js 22\"\n        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af #v4.1.0\n        with:\n          node-version: ${{ env.NODE_DEFAULT_VERSION }}\n      - name: \"Install application minimalistically\"\n        run: |\n          npm inst ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -983,22 +983,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "048C213B3A53675448492F131A54FD9071F028737DF3FA7C96269C6E0E0BBE96",
+            "gdnPrimarySignature": "50B2D5B2F29532A450E128506BEF99A238A288777B771030E78E50DAE7E2D897",
             "gdnAlternativeSignature0": "50AB6AB41C8C4705D714D1D4DC2EFE83C80804EE66C185D2E3D562095B1B3772"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "048C213B3A53675448492F131A54FD9071F028737DF3FA7C96269C6E0E0BBE96",
+            "gdnPrimarySignature": "50B2D5B2F29532A450E128506BEF99A238A288777B771030E78E50DAE7E2D897",
             "gdnAlternativeSignature0": "50AB6AB41C8C4705D714D1D4DC2EFE83C80804EE66C185D2E3D562095B1B3772"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (trivy|aqua|aquasec|snyk/actions/docker|grype|clair|sysdig|qualys|aquasecurity|tfsec-sarif-action|trivy-action) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1032,22 +1032,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "BC032A767C73B45EC72B7CEDDFDEE4CB094D8E12EDDFB99ED362B74BAA450BF0",
+            "gdnPrimarySignature": "AD743911C5E2BCBD305879880E9C0480963F2105CAA35DB9E55D6BACE05C4689",
             "gdnAlternativeSignature0": "9132466222929D0C55FA920B25989B2A4DA2A849DBF1F31F1F7E0012B5BA6336"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "BC032A767C73B45EC72B7CEDDFDEE4CB094D8E12EDDFB99ED362B74BAA450BF0",
+            "gdnPrimarySignature": "AD743911C5E2BCBD305879880E9C0480963F2105CAA35DB9E55D6BACE05C4689",
             "gdnAlternativeSignature0": "9132466222929D0C55FA920B25989B2A4DA2A849DBF1F31F1F7E0012B5BA6336"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Checkov|Tfsec|Terrascan|Trivy|Spectral|microsoft/security-devops-action|TemplateAnalyzer|TFLint|Accurics|snyk/actions/iac|Zscaler-IaC-Action|prisma-cloud-shiftleft) (Actual: -Workflow# .github/workflows/upload-sarif.yml [[##STARTupload-sarif.yml]] # GitHub Actions workflow to upload SARIF files to GitHub Code Scanning\n# This enables viewing DevOps Shield security assessment results in the Security tab\n\nname: Upload SARIF to Code Scanning\n\non:\n  push:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  pull_request:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  workflow_dispatch:\n    inputs:\n      sarif_file:\n        description: 'Path to SARIF file to upload'\n        required: false\n        default: 'sarif-results/devops-shield-assessment.sarif'\n      category:\n        description: 'Category for Code Scanning'\n        required: false\n        default: 'devops-shield-sarif-export-test'\n\npermissions:\n  contents: read\n  security-events: write\n  actions: read\n\njobs:\n  upload-sarif:\n    name: Upload SARIF\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout repos ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1081,22 +1081,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "A9F62D904BEACF3F838E130E77FAF0F10E318A961E2191FD0DC1616CEC7709F2",
+            "gdnPrimarySignature": "6A9CC4F7A10E01BFAADFE9814FA7DA9E11CD0F4EE3EDC61514B64B57D79261F5",
             "gdnAlternativeSignature0": "95365A9507FA2DBD1C18E3B6316DBB8FD59C6E3020EE13044162F4F929BC92CB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "A9F62D904BEACF3F838E130E77FAF0F10E318A961E2191FD0DC1616CEC7709F2",
+            "gdnPrimarySignature": "6A9CC4F7A10E01BFAADFE9814FA7DA9E11CD0F4EE3EDC61514B64B57D79261F5",
             "gdnAlternativeSignature0": "95365A9507FA2DBD1C18E3B6316DBB8FD59C6E3020EE13044162F4F929BC92CB"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Checkov|Tfsec|Terrascan|Trivy|Spectral|microsoft/security-devops-action|TemplateAnalyzer|TFLint|Accurics|snyk/actions/iac|Zscaler-IaC-Action|prisma-cloud-shiftleft) (Actual: -Workflow# .github/workflows/ci.yml [[##STARTci.yml]] name: \"CI/CD Pipeline\"\non:\n  push:\n    branches-ignore:\n      - l10n_develop\n      - gh-pages\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'monitoring/grafana-dashboard.json'\n      - 'screenshots/**'\n    tags-ignore:\n      - '*'\n  pull_request:\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'data/static/i18n/*.json'\n      - 'frontend/src/assets/i18n/*.json'\nenv:\n  NODE_DEFAULT_VERSION: 22\n  NODE_OPTIONS: \"--max_old_space_size=4096\"\n  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0'\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - name: \"Check out Git repository\"\n        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2\n      - name: \"Use Node.js 22\"\n        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af #v4.1.0\n        with:\n          node-version: ${{ env.NODE_DEFAULT_VERSION }}\n      - name: \"Install application minimalistically\"\n        run: |\n          npm inst ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1130,22 +1130,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "C85F7DC811D6004720A1D71D7E7014517661C9AB3B45002F381ADF528CEEFBA6",
+            "gdnPrimarySignature": "A102EAFBFDE4D5B99845FEDDCCD7953BAE91C4926A7B306191AF33428769A093",
             "gdnAlternativeSignature0": "96E5B80E7AF1647CB24A33270DBED29486D58BBC385A53643652FA84CFAEB694"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "C85F7DC811D6004720A1D71D7E7014517661C9AB3B45002F381ADF528CEEFBA6",
+            "gdnPrimarySignature": "A102EAFBFDE4D5B99845FEDDCCD7953BAE91C4926A7B306191AF33428769A093",
             "gdnAlternativeSignature0": "96E5B80E7AF1647CB24A33270DBED29486D58BBC385A53643652FA84CFAEB694"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Checkov|Tfsec|Terrascan|Trivy|Spectral|microsoft/security-devops-action|TemplateAnalyzer|TFLint|Accurics|snyk/actions/iac|Zscaler-IaC-Action|prisma-cloud-shiftleft) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1179,22 +1179,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "8E7B603E7F69EE3C26B7BD1CF6AFBFC78A22FB9A26661B9DB9FEFE2BFE907C0F",
+            "gdnPrimarySignature": "99FB615B852B954266034FFA3265C836F33827518C64956971093B240C91AE1E",
             "gdnAlternativeSignature0": "C57B861DA721618EE0E7FE99510983A175FCA09E3026725963FBDCCCCAEFD16E"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "8E7B603E7F69EE3C26B7BD1CF6AFBFC78A22FB9A26661B9DB9FEFE2BFE907C0F",
+            "gdnPrimarySignature": "99FB615B852B954266034FFA3265C836F33827518C64956971093B240C91AE1E",
             "gdnAlternativeSignature0": "C57B861DA721618EE0E7FE99510983A175FCA09E3026725963FBDCCCCAEFD16E"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Tenable|Nessus|Nexpose|portswigger|Burp|Nikto|Arachni|ecsypno|scnr|SAINT|InsightVM|Qualys) (Actual: -Workflow# .github/workflows/upload-sarif.yml [[##STARTupload-sarif.yml]] # GitHub Actions workflow to upload SARIF files to GitHub Code Scanning\n# This enables viewing DevOps Shield security assessment results in the Security tab\n\nname: Upload SARIF to Code Scanning\n\non:\n  push:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  pull_request:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  workflow_dispatch:\n    inputs:\n      sarif_file:\n        description: 'Path to SARIF file to upload'\n        required: false\n        default: 'sarif-results/devops-shield-assessment.sarif'\n      category:\n        description: 'Category for Code Scanning'\n        required: false\n        default: 'devops-shield-sarif-export-test'\n\npermissions:\n  contents: read\n  security-events: write\n  actions: read\n\njobs:\n  upload-sarif:\n    name: Upload SARIF\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout repos ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1228,22 +1228,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "71B5498430D2710B226DC2793E7CA9D0A4D8D16A64EEE7E17DEBB6FD043CEEB2",
+            "gdnPrimarySignature": "60502E03E4B2EBB3A39E35EE7BF123D8BF90DF60B2EF853A57D4867732CFB057",
             "gdnAlternativeSignature0": "695C8C14DE6A333B52D40BB4472FA1F3B32677D6BEFFA4970C3346DA6B7DF03B"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "71B5498430D2710B226DC2793E7CA9D0A4D8D16A64EEE7E17DEBB6FD043CEEB2",
+            "gdnPrimarySignature": "60502E03E4B2EBB3A39E35EE7BF123D8BF90DF60B2EF853A57D4867732CFB057",
             "gdnAlternativeSignature0": "695C8C14DE6A333B52D40BB4472FA1F3B32677D6BEFFA4970C3346DA6B7DF03B"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Tenable|Nessus|Nexpose|portswigger|Burp|Nikto|Arachni|ecsypno|scnr|SAINT|InsightVM|Qualys) (Actual: -Workflow# .github/workflows/ci.yml [[##STARTci.yml]] name: \"CI/CD Pipeline\"\non:\n  push:\n    branches-ignore:\n      - l10n_develop\n      - gh-pages\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'monitoring/grafana-dashboard.json'\n      - 'screenshots/**'\n    tags-ignore:\n      - '*'\n  pull_request:\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'data/static/i18n/*.json'\n      - 'frontend/src/assets/i18n/*.json'\nenv:\n  NODE_DEFAULT_VERSION: 22\n  NODE_OPTIONS: \"--max_old_space_size=4096\"\n  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0'\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - name: \"Check out Git repository\"\n        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2\n      - name: \"Use Node.js 22\"\n        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af #v4.1.0\n        with:\n          node-version: ${{ env.NODE_DEFAULT_VERSION }}\n      - name: \"Install application minimalistically\"\n        run: |\n          npm inst ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1277,22 +1277,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "7B2A7C272D534F6A0322A7F6B9C1C210F55B8CF59FD480D9B9F2BA486E0AD23B",
+            "gdnPrimarySignature": "B234B7FF8B45075D51B4878CD903C2D12C6B728E068EC3C1BFDC2FE27CC5B65D",
             "gdnAlternativeSignature0": "07197E5B9111EFBEAAF6A4391835547A515F4BAF4DF326E8FA94E84BB3EF2A18"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "7B2A7C272D534F6A0322A7F6B9C1C210F55B8CF59FD480D9B9F2BA486E0AD23B",
+            "gdnPrimarySignature": "B234B7FF8B45075D51B4878CD903C2D12C6B728E068EC3C1BFDC2FE27CC5B65D",
             "gdnAlternativeSignature0": "07197E5B9111EFBEAAF6A4391835547A515F4BAF4DF326E8FA94E84BB3EF2A18"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Tenable|Nessus|Nexpose|portswigger|Burp|Nikto|Arachni|ecsypno|scnr|SAINT|InsightVM|Qualys) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1326,22 +1326,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "23BC5C5F424144F33AFAA8D1A869BCF0E3F4C601D90C277DC75CECD43144235C",
+            "gdnPrimarySignature": "8ED6E3DD1601AB011268071F39CB73F66A0FE3E01C4AA1446D8F32251FE33F36",
             "gdnAlternativeSignature0": "155831B6D690A36A9D874751D63060EAF170FB3255719D1AC5FB068A4337AF8A"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "23BC5C5F424144F33AFAA8D1A869BCF0E3F4C601D90C277DC75CECD43144235C",
+            "gdnPrimarySignature": "8ED6E3DD1601AB011268071F39CB73F66A0FE3E01C4AA1446D8F32251FE33F36",
             "gdnAlternativeSignature0": "155831B6D690A36A9D874751D63060EAF170FB3255719D1AC5FB068A4337AF8A"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (zap-stable|zaproxy|owaspzap|arachni|ecsypno|scnr|portswigger|Burp|Veracode|HCL-TECH-SOFTWARE|appscan-dast|soos-dast-github-action) (Actual: -Workflow# .github/workflows/upload-sarif.yml [[##STARTupload-sarif.yml]] # GitHub Actions workflow to upload SARIF files to GitHub Code Scanning\n# This enables viewing DevOps Shield security assessment results in the Security tab\n\nname: Upload SARIF to Code Scanning\n\non:\n  push:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  pull_request:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  workflow_dispatch:\n    inputs:\n      sarif_file:\n        description: 'Path to SARIF file to upload'\n        required: false\n        default: 'sarif-results/devops-shield-assessment.sarif'\n      category:\n        description: 'Category for Code Scanning'\n        required: false\n        default: 'devops-shield-sarif-export-test'\n\npermissions:\n  contents: read\n  security-events: write\n  actions: read\n\njobs:\n  upload-sarif:\n    name: Upload SARIF\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout repos ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1375,22 +1375,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "2A5938900219C8F2477B9D99FE79FA5A05D3D3196CE530A4C61E4A7CABA4D391",
+            "gdnPrimarySignature": "845E61BCF0EF14DC197136CCE3C76376D2C53376B7CAF14C4789C9FAEDB059E9",
             "gdnAlternativeSignature0": "C0560DAA3526392770943711C5D1544D3A213984EEB95E121DB586C68AD8F5E3"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "2A5938900219C8F2477B9D99FE79FA5A05D3D3196CE530A4C61E4A7CABA4D391",
+            "gdnPrimarySignature": "845E61BCF0EF14DC197136CCE3C76376D2C53376B7CAF14C4789C9FAEDB059E9",
             "gdnAlternativeSignature0": "C0560DAA3526392770943711C5D1544D3A213984EEB95E121DB586C68AD8F5E3"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (zap-stable|zaproxy|owaspzap|arachni|ecsypno|scnr|portswigger|Burp|Veracode|HCL-TECH-SOFTWARE|appscan-dast|soos-dast-github-action) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1424,22 +1424,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "D99133A86428B27B2109C2C3340D7CE36956F645C86BA84AB1B4C80BE2A6947C",
+            "gdnPrimarySignature": "2178EE748F6FC2A66DF95A47D8FF45F4AB23A2C602AF4CDF8FE58707D2B002AB",
             "gdnAlternativeSignature0": "4E5359D9A5C3DC1D11DD68539817D538FCACAFE2203B9109F1675AD0D179CF68"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "D99133A86428B27B2109C2C3340D7CE36956F645C86BA84AB1B4C80BE2A6947C",
+            "gdnPrimarySignature": "2178EE748F6FC2A66DF95A47D8FF45F4AB23A2C602AF4CDF8FE58707D2B002AB",
             "gdnAlternativeSignature0": "4E5359D9A5C3DC1D11DD68539817D538FCACAFE2203B9109F1675AD0D179CF68"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - DefaultRepositoryPermission Equals none (Actual: read)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1473,22 +1473,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "4589AB88B401230B9C0F88DA23B19A01AAEA143FCB838917C5E496F879A2681A",
+            "gdnPrimarySignature": "C5BDE1AAE53289229450A3FE6E09B120B406DC39FF768E614AF24004D07C6834",
             "gdnAlternativeSignature0": "2FF00FA6920A7B2765227D0CA05322265D0E6C9BB7B1FF99D1C4DDF9DB9E6F88"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "4589AB88B401230B9C0F88DA23B19A01AAEA143FCB838917C5E496F879A2681A",
+            "gdnPrimarySignature": "C5BDE1AAE53289229450A3FE6E09B120B406DC39FF768E614AF24004D07C6834",
             "gdnAlternativeSignature0": "2FF00FA6920A7B2765227D0CA05322265D0E6C9BB7B1FF99D1C4DDF9DB9E6F88"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - MembersCanCreatePublicRepositories Equals False (Actual: True)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1522,22 +1522,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "DD2F8761C64FEF4DD944DB4B2E8636C4854679518F05D6268D4E61B57379FB18",
+            "gdnPrimarySignature": "ADCC198B46B1F3F8F69EC9C5EA76EFEB9E61EAB2753C30ED061EF9FD52218BB9",
             "gdnAlternativeSignature0": "90D7BF877869CC8D7ECE0138187DED328F479E88B907D766B394C0AFFB7FA218"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "DD2F8761C64FEF4DD944DB4B2E8636C4854679518F05D6268D4E61B57379FB18",
+            "gdnPrimarySignature": "ADCC198B46B1F3F8F69EC9C5EA76EFEB9E61EAB2753C30ED061EF9FD52218BB9",
             "gdnAlternativeSignature0": "90D7BF877869CC8D7ECE0138187DED328F479E88B907D766B394C0AFFB7FA218"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - MembersAllowedRepositoryCreationType Equals private (Actual: all)\nAllOf : Compliant : GHOrganization - MembersCanCreateInternalRepositories Equals True \n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1571,22 +1571,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "6773A6F134B4A8B81642F46613E6E7392FDEBDD13FE18E2E05004398450A40A4",
+            "gdnPrimarySignature": "D8FE4E610F92B45EC79E139085C07E084E01537F1BE8EF2ECE26FCB917DE87D1",
             "gdnAlternativeSignature0": "7AC4B87F3AEDC8BC61A56D0352B24939CED8C1B20976081B6350165C5716EBA1"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "6773A6F134B4A8B81642F46613E6E7392FDEBDD13FE18E2E05004398450A40A4",
+            "gdnPrimarySignature": "D8FE4E610F92B45EC79E139085C07E084E01537F1BE8EF2ECE26FCB917DE87D1",
             "gdnAlternativeSignature0": "7AC4B87F3AEDC8BC61A56D0352B24939CED8C1B20976081B6350165C5716EBA1"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - MembersAllowedRepositoryCreationType Equals private (Actual: all)\nAllOf : Compliant : GHOrganization - MembersCanCreatePrivateRepositories Equals True \n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1620,22 +1620,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "E4CDDE90487C984427DA21E923D5951705E507D0D426FF21B3839A13E7F98FE9",
+            "gdnPrimarySignature": "B6D183830A2D77AB4605D12F49754961737D829273D15247BD763315631FF26C",
             "gdnAlternativeSignature0": "81A3F93D0835E20BECEB01937086AD985F1593D5E582DFBA709199CAFCA80230"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "E4CDDE90487C984427DA21E923D5951705E507D0D426FF21B3839A13E7F98FE9",
+            "gdnPrimarySignature": "B6D183830A2D77AB4605D12F49754961737D829273D15247BD763315631FF26C",
             "gdnAlternativeSignature0": "81A3F93D0835E20BECEB01937086AD985F1593D5E582DFBA709199CAFCA80230"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - TwoFactorRequirementEnabled Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1669,22 +1669,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "378C823AF3545720403C4030C8BA2FC3E17212BE4E11461D44B6BE26A21A4015",
+            "gdnPrimarySignature": "A0B792CD110774101DF66B3CD932BFEF2DE1944C1E85BEB15579D92D530DF7BC",
             "gdnAlternativeSignature0": "B0E4FC0C71B7BE070E08507F70E1580193D3139DC9C06440E2052F8F3F410359"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "378C823AF3545720403C4030C8BA2FC3E17212BE4E11461D44B6BE26A21A4015",
+            "gdnPrimarySignature": "A0B792CD110774101DF66B3CD932BFEF2DE1944C1E85BEB15579D92D530DF7BC",
             "gdnAlternativeSignature0": "B0E4FC0C71B7BE070E08507F70E1580193D3139DC9C06440E2052F8F3F410359"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\nAllOf : NonCompliant : GHRepository - AllowForking Equals False (Actual: True)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1718,22 +1718,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "1B1000D3392362B69CE20667A5157D01A75AB3255501F1499A66E4902B19753D",
+            "gdnPrimarySignature": "9B91768E0725A14EA85674EC783B2F74974D31613F1F267B044AAC971911F6DA",
             "gdnAlternativeSignature0": "97A26E6E0E95C6B7CB334A6BF49FFB7EE057361265503B77418617B56257B256"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "1B1000D3392362B69CE20667A5157D01A75AB3255501F1499A66E4902B19753D",
+            "gdnPrimarySignature": "9B91768E0725A14EA85674EC783B2F74974D31613F1F267B044AAC971911F6DA",
             "gdnAlternativeSignature0": "97A26E6E0E95C6B7CB334A6BF49FFB7EE057361265503B77418617B56257B256"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\nAllOf : NonCompliant : GHRepository - AllowForking Equals False (Actual: True)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1767,22 +1767,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "8B11042871E94B12672A430D32B041E967A478C1582EB2E018E56151C9F7B382",
+            "gdnPrimarySignature": "88F1700A7BCF71B49B3BC79D4DC45DA19F2CC586E5C8C09830B1E4041263708A",
             "gdnAlternativeSignature0": "855182E25667AC93D0A2B17FB7CC3B3C60372B018EDD772A290201759D892364"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "8B11042871E94B12672A430D32B041E967A478C1582EB2E018E56151C9F7B382",
+            "gdnPrimarySignature": "88F1700A7BCF71B49B3BC79D4DC45DA19F2CC586E5C8C09830B1E4041263708A",
             "gdnAlternativeSignature0": "855182E25667AC93D0A2B17FB7CC3B3C60372B018EDD772A290201759D892364"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\nAllOf : NonCompliant : GHRepository - AllowForking Equals False (Actual: True)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1816,22 +1816,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "D304F39FF17AC82D66A4749611FE54C6AB6FA822B81A79866C25ABBE46E7E8A4",
+            "gdnPrimarySignature": "B5FE46221EEED77ABC51E3907F97ED788D4FE93CE322BD71A22029133156A414",
             "gdnAlternativeSignature0": "2372F9E2E781948D6E01A77CEAED202B744E3153F70EE420EBC065B7498EC734"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "D304F39FF17AC82D66A4749611FE54C6AB6FA822B81A79866C25ABBE46E7E8A4",
+            "gdnPrimarySignature": "B5FE46221EEED77ABC51E3907F97ED788D4FE93CE322BD71A22029133156A414",
             "gdnAlternativeSignature0": "2372F9E2E781948D6E01A77CEAED202B744E3153F70EE420EBC065B7498EC734"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1865,22 +1865,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "C553DCBE9D9A9DB64D57B5384B39F5ECCFA164B397572B0701BABD3685BAAD96",
+            "gdnPrimarySignature": "0B380DE613261AE750BA0C8A40B43658EF1AFA10AA6371DFFE2795B0E9C24293",
             "gdnAlternativeSignature0": "B5924F321C3548AF100DA5677E0DA0E5901A4E0DDDA7ED564432084A8985385E"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "C553DCBE9D9A9DB64D57B5384B39F5ECCFA164B397572B0701BABD3685BAAD96",
+            "gdnPrimarySignature": "0B380DE613261AE750BA0C8A40B43658EF1AFA10AA6371DFFE2795B0E9C24293",
             "gdnAlternativeSignature0": "B5924F321C3548AF100DA5677E0DA0E5901A4E0DDDA7ED564432084A8985385E"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1914,22 +1914,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "CA1D40CD68BE736F761AECCFF266C98DB5701FC7FC8BBF3D7310618BC0EB28B8",
+            "gdnPrimarySignature": "6C35B3098049B97959B069616596CEFB2911A5317F4769819EE189051C192278",
             "gdnAlternativeSignature0": "83E311F7DF8B3E810BD7BEA56D64D4EB3CADDB0D7CB6D97228D0EEDD183FA781"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "CA1D40CD68BE736F761AECCFF266C98DB5701FC7FC8BBF3D7310618BC0EB28B8",
+            "gdnPrimarySignature": "6C35B3098049B97959B069616596CEFB2911A5317F4769819EE189051C192278",
             "gdnAlternativeSignature0": "83E311F7DF8B3E810BD7BEA56D64D4EB3CADDB0D7CB6D97228D0EEDD183FA781"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Private Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -1963,22 +1963,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "3D63A1BB6A72D44427CC39155C4F69E3BBB1411F492E94C010036E578235A69A",
+            "gdnPrimarySignature": "5B26B1D6DE16D3C7E5B664739CF689A8E7D64582ECFDAB23925EEC33AC231183",
             "gdnAlternativeSignature0": "0065672CCA1069B2B4F0698B0EF1B65C8F36FA85B34642F632A8CEA3BC4DCA2E"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "3D63A1BB6A72D44427CC39155C4F69E3BBB1411F492E94C010036E578235A69A",
+            "gdnPrimarySignature": "5B26B1D6DE16D3C7E5B664739CF689A8E7D64582ECFDAB23925EEC33AC231183",
             "gdnAlternativeSignature0": "0065672CCA1069B2B4F0698B0EF1B65C8F36FA85B34642F632A8CEA3BC4DCA2E"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "BranchProtectionRules",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/branchprotectionrules/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/branchprotectionrules/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/settings/branches",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHBranchProtectionRules - BranchProtectionRules.TotalCount GreaterThan 0 (Actual: 0)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2012,22 +2012,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "992DBD832400564E83E3956904ABBF772BDA306D4A5B1EA97919338E8C325992",
+            "gdnPrimarySignature": "9255D059CEC28213EBEB72C554241A11C85E5113261B86CE97EAC1BAB9598FCC",
             "gdnAlternativeSignature0": "CE2B689CDFBD17F44945798BC550CD0C286E8696BE9B90B697A1A3ADE2DCF3FA"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "992DBD832400564E83E3956904ABBF772BDA306D4A5B1EA97919338E8C325992",
+            "gdnPrimarySignature": "9255D059CEC28213EBEB72C554241A11C85E5113261B86CE97EAC1BAB9598FCC",
             "gdnAlternativeSignature0": "CE2B689CDFBD17F44945798BC550CD0C286E8696BE9B90B697A1A3ADE2DCF3FA"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "BranchProtectionRules",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/branchprotectionrules/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/branchprotectionrules/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/settings/branches",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHBranchProtectionRules - BranchProtectionRules.TotalCount GreaterThan 0 (Actual: 0)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2061,22 +2061,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "36A436932599FFB0A9C7FEC9766F1B6AC075D103CAAE7BABFB9BCF45AEE8B1C9",
+            "gdnPrimarySignature": "15CD4D56D7334196F0A709E496296D070DBFA8A9B25997FC201502D9C258D046",
             "gdnAlternativeSignature0": "B5F3C6FD784909EBFAAB11306B5F203330422BBB8F448153897259229EC2D152"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "36A436932599FFB0A9C7FEC9766F1B6AC075D103CAAE7BABFB9BCF45AEE8B1C9",
+            "gdnPrimarySignature": "15CD4D56D7334196F0A709E496296D070DBFA8A9B25997FC201502D9C258D046",
             "gdnAlternativeSignature0": "B5F3C6FD784909EBFAAB11306B5F203330422BBB8F448153897259229EC2D152"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "BranchProtectionRules",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/branchprotectionrules/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/branchprotectionrules/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/settings/branches",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHBranchProtectionRules - BranchProtectionRules.TotalCount GreaterThan 0 (Actual: 0)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2110,22 +2110,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9791F69695DF5D3874E455C48E67B75CC772F9694A321F8EC7128AC322784CDD",
+            "gdnPrimarySignature": "576AF6F48D18B25125026E0AEA570C9498B3DD41656D3F2FD01BAEFCF93579D6",
             "gdnAlternativeSignature0": "466716448752BA418F847E84D6B73265C2EDCDB1184FA29FE5A2A96C6379D3F2"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9791F69695DF5D3874E455C48E67B75CC772F9694A321F8EC7128AC322784CDD",
+            "gdnPrimarySignature": "576AF6F48D18B25125026E0AEA570C9498B3DD41656D3F2FD01BAEFCF93579D6",
             "gdnAlternativeSignature0": "466716448752BA418F847E84D6B73265C2EDCDB1184FA29FE5A2A96C6379D3F2"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Arachni|ecsypno|scnr|portswigger|Burp) (Actual: -Workflow# .github/workflows/upload-sarif.yml [[##STARTupload-sarif.yml]] # GitHub Actions workflow to upload SARIF files to GitHub Code Scanning\n# This enables viewing DevOps Shield security assessment results in the Security tab\n\nname: Upload SARIF to Code Scanning\n\non:\n  push:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  pull_request:\n    branches: [main]\n    paths:\n      - 'docs/sarif/*.sarif'\n      - 'sarif-results/*.sarif'\n  workflow_dispatch:\n    inputs:\n      sarif_file:\n        description: 'Path to SARIF file to upload'\n        required: false\n        default: 'sarif-results/devops-shield-assessment.sarif'\n      category:\n        description: 'Category for Code Scanning'\n        required: false\n        default: 'devops-shield-sarif-export-test'\n\npermissions:\n  contents: read\n  security-events: write\n  actions: read\n\njobs:\n  upload-sarif:\n    name: Upload SARIF\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout repos ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2159,22 +2159,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "E2AF43E9D24F689CF13985F5A14F71B805208676E20086A672CBB5C5B90B18C6",
+            "gdnPrimarySignature": "417C94B59974025C3745A9071CF8259267108F33056E21AAAC6A06690DE2C607",
             "gdnAlternativeSignature0": "11FA9266BA5F93F0A4BCA91EF43ADD2126A58F033A99100935039B9B64E9B006"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "E2AF43E9D24F689CF13985F5A14F71B805208676E20086A672CBB5C5B90B18C6",
+            "gdnPrimarySignature": "417C94B59974025C3745A9071CF8259267108F33056E21AAAC6A06690DE2C607",
             "gdnAlternativeSignature0": "11FA9266BA5F93F0A4BCA91EF43ADD2126A58F033A99100935039B9B64E9B006"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Arachni|ecsypno|scnr|portswigger|Burp) (Actual: -Workflow# .github/workflows/ci.yml [[##STARTci.yml]] name: \"CI/CD Pipeline\"\non:\n  push:\n    branches-ignore:\n      - l10n_develop\n      - gh-pages\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'monitoring/grafana-dashboard.json'\n      - 'screenshots/**'\n    tags-ignore:\n      - '*'\n  pull_request:\n    paths-ignore:\n      - '*.md'\n      - 'LICENSE'\n      - 'data/static/i18n/*.json'\n      - 'frontend/src/assets/i18n/*.json'\nenv:\n  NODE_DEFAULT_VERSION: 22\n  NODE_OPTIONS: \"--max_old_space_size=4096\"\n  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0'\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - name: \"Check out Git repository\"\n        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2\n      - name: \"Use Node.js 22\"\n        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af #v4.1.0\n        with:\n          node-version: ${{ env.NODE_DEFAULT_VERSION }}\n      - name: \"Install application minimalistically\"\n        run: |\n          npm inst ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2208,22 +2208,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "D9F7ECF5832446128FD0F8FF941B70FBBA2B0C35DEB3161DF9371479698F8D8F",
+            "gdnPrimarySignature": "4942302839199D965C2055E1B2A1513FD3DB1F47519A768262B5A073356FAA98",
             "gdnAlternativeSignature0": "9327EAD42AD1674F12E38BB7872BF1D10FD1EE38041C12E9B90510A8F61748F3"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "D9F7ECF5832446128FD0F8FF941B70FBBA2B0C35DEB3161DF9371479698F8D8F",
+            "gdnPrimarySignature": "4942302839199D965C2055E1B2A1513FD3DB1F47519A768262B5A073356FAA98",
             "gdnAlternativeSignature0": "9327EAD42AD1674F12E38BB7872BF1D10FD1EE38041C12E9B90510A8F61748F3"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/actionsworkflows/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/actionsworkflows/1141589081/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHActionsWorkflows - WorkflowsYaml Match (Arachni|ecsypno|scnr|portswigger|Burp) (Actual: -Workflow# .github/workflows/flake8.yml [[##STARTflake8.yml]] # This workflow will install Python dependencies, run tests and lint with a single version of Python\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions\n\nname: Flake8\n\non:\n  push:\n    branches: [ master ]\n  pull_request:\n    branches: [ master ]\n\njobs:\n  build:\n\n    runs-on: ubuntu-latest\n\n    steps:\n    - uses: actions/checkout@v2\n    - name: Set up Python 3.8\n      uses: actions/setup-python@v2\n      with:\n        python-version: 3.8\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n    - name: Lint with flake8\n      run: |\n        pip install flake8\n        # stop the build if there are Python syntax errors or undefined names\n        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n        # exit-zero treats all errors  ...)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2257,22 +2257,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "56F7A1766BD7F19F19AADD890EEEC88E419431296B6220AE69FFA796F9BD76AE",
+            "gdnPrimarySignature": "C7F922AC7CF08D90E6EE0F883130AC089ACD35AFD42CD6D4E0AACEAFD63FCF39",
             "gdnAlternativeSignature0": "E385B6FC44E6B077CBBE6CDB4EE153769CA9FE2F68AABD0FB6BA26FDC3DFBB31"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "56F7A1766BD7F19F19AADD890EEEC88E419431296B6220AE69FFA796F9BD76AE",
+            "gdnPrimarySignature": "C7F922AC7CF08D90E6EE0F883130AC089ACD35AFD42CD6D4E0AACEAFD63FCF39",
             "gdnAlternativeSignature0": "E385B6FC44E6B077CBBE6CDB4EE153769CA9FE2F68AABD0FB6BA26FDC3DFBB31"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHOrganization - MembersCanCreatePages Equals False (Actual: True)\nAllOf : NonCompliant : GHOrganization - MembersCanCreatePublicPages Equals False (Actual: True)\nAllOf : NonCompliant : GHOrganization - MembersCanCreatePrivatePages Equals False (Actual: True)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2306,22 +2306,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "83960FF8DD29B914520E659EF2ABFDDD134070903A892787C3F3F2228A0B5ACD",
+            "gdnPrimarySignature": "AEC3EB3607F41AF998BD137214E6553C75AEF81CA2FEB7AF9213746744FD7021",
             "gdnAlternativeSignature0": "56BB32ABBD8C3A6A36F2B7EE485E1549E758C9463A1F6C9A12274B918E705D24"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "83960FF8DD29B914520E659EF2ABFDDD134070903A892787C3F3F2228A0B5ACD",
+            "gdnPrimarySignature": "AEC3EB3607F41AF998BD137214E6553C75AEF81CA2FEB7AF9213746744FD7021",
             "gdnAlternativeSignature0": "56BB32ABBD8C3A6A36F2B7EE485E1549E758C9463A1F6C9A12274B918E705D24"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/vulnerabilityalerts/1/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/vulnerabilityalerts/1/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/security/dependabot/1",
             "EvaluationDetails": "Evaluated by: GHRepositoryVulnerabilityAlertPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlert - SecurityVulnerability.Severity Equals HIGH \nAllOf : NonCompliant : GHRepositoryVulnerabilityAlert - State NotEquals OPEN (Actual: OPEN)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2355,22 +2355,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "5EAAB3BDAB500F97A72B52E2DD288AAAB5A938C1107F93BF98C43E767A08F7A7",
+            "gdnPrimarySignature": "851EAD359515EF6765E59A6B1F28E807F9EA7C7D24275A2583EA913EC4CFA313",
             "gdnAlternativeSignature0": "9F4F112A6E890F6225314BCEE2D6539F850076834B00F842753A41E62965ADB2"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "5EAAB3BDAB500F97A72B52E2DD288AAAB5A938C1107F93BF98C43E767A08F7A7",
+            "gdnPrimarySignature": "851EAD359515EF6765E59A6B1F28E807F9EA7C7D24275A2583EA913EC4CFA313",
             "gdnAlternativeSignature0": "9F4F112A6E890F6225314BCEE2D6539F850076834B00F842753A41E62965ADB2"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/vulnerabilityalerts/2/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/vulnerabilityalerts/2/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/security/dependabot/2",
             "EvaluationDetails": "Evaluated by: GHRepositoryVulnerabilityAlertPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlert - SecurityVulnerability.Severity Equals HIGH \nAllOf : NonCompliant : GHRepositoryVulnerabilityAlert - State NotEquals OPEN (Actual: OPEN)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2404,22 +2404,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "1836241EA9D6B5C94957C5BA2E979DA9809BB5DCD7754EB82F677C5B03E56FBE",
+            "gdnPrimarySignature": "C44A0F149791E1D27D91BB865A215A92C4EB9653FC065ADA42A6052D7C4B689E",
             "gdnAlternativeSignature0": "BCD626E3EE3DA9EE9E841CE2BEB0F6F07075EA4ABBD57276971C5A166FADD1E4"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "1836241EA9D6B5C94957C5BA2E979DA9809BB5DCD7754EB82F677C5B03E56FBE",
+            "gdnPrimarySignature": "C44A0F149791E1D27D91BB865A215A92C4EB9653FC065ADA42A6052D7C4B689E",
             "gdnAlternativeSignature0": "BCD626E3EE3DA9EE9E841CE2BEB0F6F07075EA4ABBD57276971C5A166FADD1E4"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/vulnerabilityalerts/3/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/vulnerabilityalerts/3/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/security/dependabot/3",
             "EvaluationDetails": "Evaluated by: GHRepositoryVulnerabilityAlertPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlert - SecurityVulnerability.Severity Equals HIGH \nAllOf : NonCompliant : GHRepositoryVulnerabilityAlert - State NotEquals OPEN (Actual: OPEN)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2453,22 +2453,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "A793004D5298A4BCEB64B2D63E789E05C3BCC6E0FDE3F1BEB18904B82FE36C58",
+            "gdnPrimarySignature": "4E84408F486E8D3893FA7F2AB690612E3F6F6FE6B9EC295D8ACF2A96E1BF5899",
             "gdnAlternativeSignature0": "356C8BC581B48A4CCC549AB0E118D70DE1DE1F7C7CF897F9865BE6FFC4A99FB8"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "A793004D5298A4BCEB64B2D63E789E05C3BCC6E0FDE3F1BEB18904B82FE36C58",
+            "gdnPrimarySignature": "4E84408F486E8D3893FA7F2AB690612E3F6F6FE6B9EC295D8ACF2A96E1BF5899",
             "gdnAlternativeSignature0": "356C8BC581B48A4CCC549AB0E118D70DE1DE1F7C7CF897F9865BE6FFC4A99FB8"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/vulnerabilityalerts/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/vulnerabilityalerts/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalHigh Equals 0 (Actual: 3)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2501,22 +2501,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "1945BC1A193680CAC179B5625E3DF5FDC6624FCA0B32F906F71B8411845A0819",
+            "gdnPrimarySignature": "28415938DC598417441E10B54399F3A4E92FDE005DAF6B90D9C9BE15F9D2440F",
             "gdnAlternativeSignature0": "73C51210D0D15FCDA062EC5AC7087CAD68AA9634B69AE96494E8ED07C211F8DB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "1945BC1A193680CAC179B5625E3DF5FDC6624FCA0B32F906F71B8411845A0819",
+            "gdnPrimarySignature": "28415938DC598417441E10B54399F3A4E92FDE005DAF6B90D9C9BE15F9D2440F",
             "gdnAlternativeSignature0": "73C51210D0D15FCDA062EC5AC7087CAD68AA9634B69AE96494E8ED07C211F8DB"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowAutoMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2549,22 +2549,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "A3F594119070CC40C1FC586655B2D23106C30518460273BACBFFE3DE87532882",
+            "gdnPrimarySignature": "05D22869B20BB52B09582AA7E346941F9FB4D1C2B8BADAC38C790790C766553F",
             "gdnAlternativeSignature0": "D30242E12EDBD0A4F58663F18F9B1ED73FC26DB347A0D0248139E18DE0D0CF27"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "A3F594119070CC40C1FC586655B2D23106C30518460273BACBFFE3DE87532882",
+            "gdnPrimarySignature": "05D22869B20BB52B09582AA7E346941F9FB4D1C2B8BADAC38C790790C766553F",
             "gdnAlternativeSignature0": "D30242E12EDBD0A4F58663F18F9B1ED73FC26DB347A0D0248139E18DE0D0CF27"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowAutoMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2597,22 +2597,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "EA7B6F4663D04A2D0592C0FC58C7D3838D2141B6B82B8492EC860EE730E8510C",
+            "gdnPrimarySignature": "E63697FAF2CDA4618E120C80CA9680020F83323A35BBF5EBE57C9D1A15522F07",
             "gdnAlternativeSignature0": "C7A097FAFAD40D251E1C183784A31A6BAF920F99ED9DB4B9D0530C818FC82828"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "EA7B6F4663D04A2D0592C0FC58C7D3838D2141B6B82B8492EC860EE730E8510C",
+            "gdnPrimarySignature": "E63697FAF2CDA4618E120C80CA9680020F83323A35BBF5EBE57C9D1A15522F07",
             "gdnAlternativeSignature0": "C7A097FAFAD40D251E1C183784A31A6BAF920F99ED9DB4B9D0530C818FC82828"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowAutoMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2645,22 +2645,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "7A687278BC5B85A588FC5DDA50AB41C39A34E1A58EE919309DB98C5CA2CC6572",
+            "gdnPrimarySignature": "CABECB76534B427603466983C5370A631A4118C019C5875317BC68CE63FE6751",
             "gdnAlternativeSignature0": "B536EED1C3FCBB9DB935118BBFA463455F19D83BB8B797D700EB37D3B3378169"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "7A687278BC5B85A588FC5DDA50AB41C39A34E1A58EE919309DB98C5CA2CC6572",
+            "gdnPrimarySignature": "CABECB76534B427603466983C5370A631A4118C019C5875317BC68CE63FE6751",
             "gdnAlternativeSignature0": "B536EED1C3FCBB9DB935118BBFA463455F19D83BB8B797D700EB37D3B3378169"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowUpdateBranch Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2693,22 +2693,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "0E230CB6225429980BD074FA5610942F00E0B2026C4D254519F3D52171B3B0BC",
+            "gdnPrimarySignature": "EFAB9DA332CB21B1E6D1AECC5817976579EEA3F46E2E648356D31DEC2712ACAF",
             "gdnAlternativeSignature0": "A90F1F9A4C482813926A470B31B1B8D11A1FFEABECFAD488663FF166D6A1D102"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "0E230CB6225429980BD074FA5610942F00E0B2026C4D254519F3D52171B3B0BC",
+            "gdnPrimarySignature": "EFAB9DA332CB21B1E6D1AECC5817976579EEA3F46E2E648356D31DEC2712ACAF",
             "gdnAlternativeSignature0": "A90F1F9A4C482813926A470B31B1B8D11A1FFEABECFAD488663FF166D6A1D102"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowUpdateBranch Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2741,22 +2741,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "B74E7B2762F2B506466074FE82A0992C5CED49F265526D542696C84134A18D16",
+            "gdnPrimarySignature": "5B677D327C4D114F4D9E1D1512342E3E7E28E7D5D5A2AF09ADE6197AB1B471A3",
             "gdnAlternativeSignature0": "428FEE226695D53D3CE496C2D024CEA260737CF79C43D164127ACEBB5A6BF89B"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "B74E7B2762F2B506466074FE82A0992C5CED49F265526D542696C84134A18D16",
+            "gdnPrimarySignature": "5B677D327C4D114F4D9E1D1512342E3E7E28E7D5D5A2AF09ADE6197AB1B471A3",
             "gdnAlternativeSignature0": "428FEE226695D53D3CE496C2D024CEA260737CF79C43D164127ACEBB5A6BF89B"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - AllowUpdateBranch Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2789,22 +2789,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "A7FF3E8480B15B607A0A14123309C97C3EA68FE63A1F3FD92E6339794413A5E9",
+            "gdnPrimarySignature": "9E9B697ACCED2CBB729B32AAB140BB381145F0D3E9431A97625E09C90296FCF2",
             "gdnAlternativeSignature0": "A218B47ABB9A1E620EA9D13DF89018335BC940D1CE1D6211FEE2CC30EB0D76C0"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "A7FF3E8480B15B607A0A14123309C97C3EA68FE63A1F3FD92E6339794413A5E9",
+            "gdnPrimarySignature": "9E9B697ACCED2CBB729B32AAB140BB381145F0D3E9431A97625E09C90296FCF2",
             "gdnAlternativeSignature0": "A218B47ABB9A1E620EA9D13DF89018335BC940D1CE1D6211FEE2CC30EB0D76C0"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - DeleteBranchOnMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2837,22 +2837,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "5F9FD0A3EF10C378B5BFE54014B455BBF1506171FA15639D4E84F02080285488",
+            "gdnPrimarySignature": "BD6FE75176AFDA912A87DEF7E2BA5FE7E8EDDF4ECE52DC0F881527F1C2AAE252",
             "gdnAlternativeSignature0": "10E0549E8B1F7C71B7F92123E1598B744D4A5D69ADC77C5C92DD8209E5490B50"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "5F9FD0A3EF10C378B5BFE54014B455BBF1506171FA15639D4E84F02080285488",
+            "gdnPrimarySignature": "BD6FE75176AFDA912A87DEF7E2BA5FE7E8EDDF4ECE52DC0F881527F1C2AAE252",
             "gdnAlternativeSignature0": "10E0549E8B1F7C71B7F92123E1598B744D4A5D69ADC77C5C92DD8209E5490B50"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - DeleteBranchOnMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2885,22 +2885,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "D5FA5C341891647819D3B98F93D4DCBB687375D96D3748669D37AFCEC194D8F1",
+            "gdnPrimarySignature": "2B831C121C5590980C793E37391CC47DAA8BFD40BAF0F3FFF7114802D17AF3AF",
             "gdnAlternativeSignature0": "5627E71B4E309FC40F7DF131F93DE8CCBAA37F22D2E93121FFC24B780910BC74"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "D5FA5C341891647819D3B98F93D4DCBB687375D96D3748669D37AFCEC194D8F1",
+            "gdnPrimarySignature": "2B831C121C5590980C793E37391CC47DAA8BFD40BAF0F3FFF7114802D17AF3AF",
             "gdnAlternativeSignature0": "5627E71B4E309FC40F7DF131F93DE8CCBAA37F22D2E93121FFC24B780910BC74"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - DeleteBranchOnMerge Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2934,22 +2934,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "F268F81FB2F5707DBC9B8C8C8F0F7CCE696ECF99C45A179F132D171702DE55DC",
+            "gdnPrimarySignature": "DF40278E4758C90A6869A75B3A76A7BEB1F1CFFDC6EBD0BAB344CC798CC56FDD",
             "gdnAlternativeSignature0": "0B688FFA2BE6A28259D93C94A43FCA45C3B735D9CE0D1732899BAF73123FEB8E"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "F268F81FB2F5707DBC9B8C8C8F0F7CCE696ECF99C45A179F132D171702DE55DC",
+            "gdnPrimarySignature": "DF40278E4758C90A6869A75B3A76A7BEB1F1CFFDC6EBD0BAB344CC798CC56FDD",
             "gdnAlternativeSignature0": "0B688FFA2BE6A28259D93C94A43FCA45C3B735D9CE0D1732899BAF73123FEB8E"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHOrganization - Name NotEquals  \nAllOf : Compliant : GHOrganization - Description NotEquals  \nAllOf : Compliant : GHOrganization - Url NotEquals  \nAllOf : NonCompliant : GHOrganization - Location NotEquals  (Actual: )\nAllOf : Compliant : GHOrganization - AvatarUrl NotEquals  \n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -2983,22 +2983,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "DAA46953AA34740E8C47DA75D3E7D22112F2409928E4B091FA4E8378D93F21CF",
+            "gdnPrimarySignature": "9FC0E28956176F8B679BEDFCF2F2CA1E988F0DC7F7534114CA7E92C04F3BCB8F",
             "gdnAlternativeSignature0": "B6B4C550C37ECAF6C5549B5DAD740B760A2D6C615F234DB3934EA22E71BC9A4B"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "DAA46953AA34740E8C47DA75D3E7D22112F2409928E4B091FA4E8378D93F21CF",
+            "gdnPrimarySignature": "9FC0E28956176F8B679BEDFCF2F2CA1E988F0DC7F7534114CA7E92C04F3BCB8F",
             "gdnAlternativeSignature0": "B6B4C550C37ECAF6C5549B5DAD740B760A2D6C615F234DB3934EA22E71BC9A4B"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Description NotEquals  (Actual: )\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3032,22 +3032,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "0307152522AF3BBAA3E18C844AE4AEDB5A51EDF6000B8DB7DD4D9F8894F8311B",
+            "gdnPrimarySignature": "7461A3F07C1664980E0323DB004AED5384C08B002463E5ACD2CDA9B17335766B",
             "gdnAlternativeSignature0": "7C4FAC3633E226AE9A2FCAABBC12F1A2D7CFB75D73E1B0E3B9064AB87D8F29ED"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "0307152522AF3BBAA3E18C844AE4AEDB5A51EDF6000B8DB7DD4D9F8894F8311B",
+            "gdnPrimarySignature": "7461A3F07C1664980E0323DB004AED5384C08B002463E5ACD2CDA9B17335766B",
             "gdnAlternativeSignature0": "7C4FAC3633E226AE9A2FCAABBC12F1A2D7CFB75D73E1B0E3B9064AB87D8F29ED"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Description NotEquals  (Actual: )\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3081,22 +3081,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9C9A53DB24DEB8AEE7116A32D663B9DE0A2B5AB2CB7DA26CA0848A9D9556E5ED",
+            "gdnPrimarySignature": "4352BCA5F574C6D7C6CC543E849DB300031A398A8ED0E76811C175001150D108",
             "gdnAlternativeSignature0": "9E26B6D59031A1555FE9F5F979658C09810694E6EF87E21C418E83359A9B6347"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9C9A53DB24DEB8AEE7116A32D663B9DE0A2B5AB2CB7DA26CA0848A9D9556E5ED",
+            "gdnPrimarySignature": "4352BCA5F574C6D7C6CC543E849DB300031A398A8ED0E76811C175001150D108",
             "gdnAlternativeSignature0": "9E26B6D59031A1555FE9F5F979658C09810694E6EF87E21C418E83359A9B6347"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - Description NotEquals  (Actual: )\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3130,22 +3130,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9341D60A9A6FB8B48467345FB0586733431DE5FEA780B9AC2FB4F8C72B2FFBC8",
+            "gdnPrimarySignature": "12B230283F0E215A690F051307171F4A057DAE2197AA2E944E724DBB7B491E20",
             "gdnAlternativeSignature0": "DF49A8876443C1FB4507AB4EB11209FC0FCB31C9339F7DE249EE9FEDD7D9A911"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9341D60A9A6FB8B48467345FB0586733431DE5FEA780B9AC2FB4F8C72B2FFBC8",
+            "gdnPrimarySignature": "12B230283F0E215A690F051307171F4A057DAE2197AA2E944E724DBB7B491E20",
             "gdnAlternativeSignature0": "DF49A8876443C1FB4507AB4EB11209FC0FCB31C9339F7DE249EE9FEDD7D9A911"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - HasTopics Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3179,22 +3179,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "6F90179D1533C5CB7264898B354B61998A77308AE2150C07C02CD66415618E38",
+            "gdnPrimarySignature": "7939E540B6E1436438D635B1AED9A0E636CBADFAF7DB5BEF87C6B2ABA82A5DF4",
             "gdnAlternativeSignature0": "BB652C06F52F989065FEAA4B648F36C8417E48FF35D3FB1C244ECA7C14A338EB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "6F90179D1533C5CB7264898B354B61998A77308AE2150C07C02CD66415618E38",
+            "gdnPrimarySignature": "7939E540B6E1436438D635B1AED9A0E636CBADFAF7DB5BEF87C6B2ABA82A5DF4",
             "gdnAlternativeSignature0": "BB652C06F52F989065FEAA4B648F36C8417E48FF35D3FB1C244ECA7C14A338EB"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - HasTopics Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3228,22 +3228,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "53FB13CCF533001743C96C65160FB986C8FEA1D48327C100FF385AB8484E51AF",
+            "gdnPrimarySignature": "44D1857CD0236903C5F5DC5D674628E75CE5056E33B3E124F4E57413CA34276D",
             "gdnAlternativeSignature0": "1A3B2E7FF854D1C0404A430AD6B02F9FCDC10876108E203DA0E9BE59073735BA"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "53FB13CCF533001743C96C65160FB986C8FEA1D48327C100FF385AB8484E51AF",
+            "gdnPrimarySignature": "44D1857CD0236903C5F5DC5D674628E75CE5056E33B3E124F4E57413CA34276D",
             "gdnAlternativeSignature0": "1A3B2E7FF854D1C0404A430AD6B02F9FCDC10876108E203DA0E9BE59073735BA"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : NonCompliant : GHRepository - HasTopics Equals True (Actual: False)\n-------------------------------------------------------\nResult: NonCompliant\n",
             "ComplianceState": 0,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3277,22 +3277,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "95B5F199351D1CB5462A63028C925FABC1F14B3E7472AAAE1DC3EE9F3BD69A0D",
+            "gdnPrimarySignature": "D357749AEE854E8F4A425FA66A26C099F3A9A233515F77A042E238550FB33B72",
             "gdnAlternativeSignature0": "3F2C456362FCFC788305F0A8FA3F9F49A40397F399DEA8BCFB788C72F8748629"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "95B5F199351D1CB5462A63028C925FABC1F14B3E7472AAAE1DC3EE9F3BD69A0D",
+            "gdnPrimarySignature": "D357749AEE854E8F4A425FA66A26C099F3A9A233515F77A042E238550FB33B72",
             "gdnAlternativeSignature0": "3F2C456362FCFC788305F0A8FA3F9F49A40397F399DEA8BCFB788C72F8748629"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : Compliant : GHActionsWorkflows - SecurityAndAnalysis.SecretScanning.Status Equals enabled \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3326,22 +3326,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "94843A8AECB72E391132584BA017FA8A0B942913F55771E7A30A265D545083E5",
+            "gdnPrimarySignature": "3806A5B3187BF8592815ED5741685A27C7D10B8E8213AF84CD657034F19D3DBB",
             "gdnAlternativeSignature0": "6AFD26F762F6BD20D9FC4693D868B1334AAE38BE8091B0FAFDC083B54EE0EC9C"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "94843A8AECB72E391132584BA017FA8A0B942913F55771E7A30A265D545083E5",
+            "gdnPrimarySignature": "3806A5B3187BF8592815ED5741685A27C7D10B8E8213AF84CD657034F19D3DBB",
             "gdnAlternativeSignature0": "6AFD26F762F6BD20D9FC4693D868B1334AAE38BE8091B0FAFDC083B54EE0EC9C"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : Compliant : GHActionsWorkflows - SecurityAndAnalysis.DependabotSecurityUpdates.Status Equals enabled \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3375,22 +3375,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "DC172797CF2A54F9040346C474F44CEA1F520A8D655CB35239D04D9192CB2009",
+            "gdnPrimarySignature": "6815E52C7B14D4C5FC0A5E706A9616C5E18EBA92912BB7F5E3E225E791C031AA",
             "gdnAlternativeSignature0": "55C7FBDB71CE704F76F2244BE6DC7DDD770F7939F3F3B9963559BC500B6548F4"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "DC172797CF2A54F9040346C474F44CEA1F520A8D655CB35239D04D9192CB2009",
+            "gdnPrimarySignature": "6815E52C7B14D4C5FC0A5E706A9616C5E18EBA92912BB7F5E3E225E791C031AA",
             "gdnAlternativeSignature0": "55C7FBDB71CE704F76F2244BE6DC7DDD770F7939F3F3B9963559BC500B6548F4"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAnyOf : NonCompliant : GHActionsWorkflows - SecurityAndAnalysis.DependabotSecurityUpdates.Status Equals enabled (Actual: disabled)\nAnyOf : Compliant : GHActionsWorkflows - WorkflowsYaml Match (dependency-review-action|AdvancedSecurity-Dependency-Scanning|cyclonedx|dependencytrack|dependency-track|dependency-check|WhiteSource|Mend|Veracode|Snyk|Checkmarx|CxSCA|checkmarx/ast-github-action|Synopsys|SynopsysDetectTask|Spectral|OSV-Scanner|Semgrep|JFrog|osv-scanner-action) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3424,22 +3424,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "56A3BC32B88B29C88FEDE6F9F70DBA03958B1739E343EBFA57A855C4CF841BBD",
+            "gdnPrimarySignature": "6D8F72E0E0A7F31FF82FECA06A56BEA2C0D32E0FAA4F502A95E98D88230CC956",
             "gdnAlternativeSignature0": "B20F336220242E29DA594B805855CCCC9C82715E1D0906371C55D44959E0EEAB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "56A3BC32B88B29C88FEDE6F9F70DBA03958B1739E343EBFA57A855C4CF841BBD",
+            "gdnPrimarySignature": "6D8F72E0E0A7F31FF82FECA06A56BEA2C0D32E0FAA4F502A95E98D88230CC956",
             "gdnAlternativeSignature0": "B20F336220242E29DA594B805855CCCC9C82715E1D0906371C55D44959E0EEAB"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/actionsworkflows/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/actionsworkflows/1141921790/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHActionsWorkflows - WorkflowsYaml Match (codeql-action|AdvancedSecurity-Codeql-Analyze|microsoft/security-devops-action|sonarqube-scan-action|sonarcloud-github-action|WhiteSource|Mend|Veracode|Snyk|Checkmarx|CxFlow|checkmarx/ast-github-action|Semgrep|Fortify|Synopsys|coverity|HCL AppScan|appscan-sast|DeepScan|BinSkim|bandit|python-bandit-scan|JFrog|CodeThreat|codescan-scanner-action|ossar-action|contrastscan-action|apisec-run-scan|codacy-analysis-cli-action|pyre-action|msvc-code-analysis-action) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3473,22 +3473,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "779D7A37B63BE9BB721CC76DC41A467AFBDAF9B32D037B261B50FE702BEEF249",
+            "gdnPrimarySignature": "E8B43B18F96AB3F33F0DAAF29F2D12AC962D8C66A2A94E4367A29BF20430B60D",
             "gdnAlternativeSignature0": "23951F52F095956DE8F58F329CC6C2F05BAD1D5C69D693C85980889CA87105C3"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "779D7A37B63BE9BB721CC76DC41A467AFBDAF9B32D037B261B50FE702BEEF249",
+            "gdnPrimarySignature": "E8B43B18F96AB3F33F0DAAF29F2D12AC962D8C66A2A94E4367A29BF20430B60D",
             "gdnAlternativeSignature0": "23951F52F095956DE8F58F329CC6C2F05BAD1D5C69D693C85980889CA87105C3"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHActionsWorkflows - WorkflowsYaml Match (codeql-action|AdvancedSecurity-Codeql-Analyze|microsoft/security-devops-action|sonarqube-scan-action|sonarcloud-github-action|WhiteSource|Mend|Veracode|Snyk|Checkmarx|CxFlow|checkmarx/ast-github-action|Semgrep|Fortify|Synopsys|coverity|HCL AppScan|appscan-sast|DeepScan|BinSkim|bandit|python-bandit-scan|JFrog|CodeThreat|codescan-scanner-action|ossar-action|contrastscan-action|apisec-run-scan|codacy-analysis-cli-action|pyre-action|msvc-code-analysis-action) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3522,22 +3522,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "435B6CB8842DD99299B19A28D8F13986AC0306D7997A6ED9D779847E813EA194",
+            "gdnPrimarySignature": "A4DD4A4291320EFA5388B140FB9307F67D687E748CF8C6CFEAA1023CFB31472E",
             "gdnAlternativeSignature0": "CDA203654BB7EC15A80135E4D8408F03742AC2FDD8EFEDE44D003A19B4ECD133"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "435B6CB8842DD99299B19A28D8F13986AC0306D7997A6ED9D779847E813EA194",
+            "gdnPrimarySignature": "A4DD4A4291320EFA5388B140FB9307F67D687E748CF8C6CFEAA1023CFB31472E",
             "gdnAlternativeSignature0": "CDA203654BB7EC15A80135E4D8408F03742AC2FDD8EFEDE44D003A19B4ECD133"
           },
           "properties": {
             "PolicyInitiative": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceType": "ActionsWorkflows",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/actionsworkflows/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/actionsworkflows/1141516439/",
             "ResourceRefName": "AppSec - GH Secure Repositories - DevSecOps Controls (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/tree/main/.github/workflows",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHActionsWorkflows - WorkflowsYaml Match (zap-stable|zaproxy|owaspzap|arachni|ecsypno|scnr|portswigger|Burp|Veracode|HCL-TECH-SOFTWARE|appscan-dast|soos-dast-github-action) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3571,22 +3571,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "1A6BCB98F48C604A99F5CCB00228F7E03C26EA8CAA26A5C040AD4C13775FB358",
+            "gdnPrimarySignature": "C34DC6E56BBFA8403DE3D59A6CA0731220C3661CC2EB26C49EF4D505CCC666AD",
             "gdnAlternativeSignature0": "9248D610A934E8ED4FC55C87AF38729D6754DBF56DEB6D5508D75CC535FA5CC2"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "1A6BCB98F48C604A99F5CCB00228F7E03C26EA8CAA26A5C040AD4C13775FB358",
+            "gdnPrimarySignature": "C34DC6E56BBFA8403DE3D59A6CA0731220C3661CC2EB26C49EF4D505CCC666AD",
             "gdnAlternativeSignature0": "9248D610A934E8ED4FC55C87AF38729D6754DBF56DEB6D5508D75CC535FA5CC2"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceType": "ActionsPolicies",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/actionspolicies/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/actionspolicies/",
             "ResourceRefName": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceLink": "https://github.com/organizations/orginsecure/settings/actions",
             "EvaluationDetails": "Evaluated by: GHActionsPoliciesPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHActionsPolicies - DefaultWorkflowPermissions Equals read \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3620,22 +3620,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "FE4C83553FF9C88652E911FA534000EAFC2470C885E8AE5697A05121E52AE113",
+            "gdnPrimarySignature": "1FF2393116A716C49DAE0861CDA092BD010D2D84A48F87E8214EC2ACBCBF62A9",
             "gdnAlternativeSignature0": "95FB044068008DD45A040F335E5734C30F306A9269F7040CC08EE418C946ECAE"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "FE4C83553FF9C88652E911FA534000EAFC2470C885E8AE5697A05121E52AE113",
+            "gdnPrimarySignature": "1FF2393116A716C49DAE0861CDA092BD010D2D84A48F87E8214EC2ACBCBF62A9",
             "gdnAlternativeSignature0": "95FB044068008DD45A040F335E5734C30F306A9269F7040CC08EE418C946ECAE"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceType": "ActionsPolicies",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/actionspolicies/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/actionspolicies/",
             "ResourceRefName": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceLink": "https://github.com/organizations/orginsecure/settings/actions",
             "EvaluationDetails": "Evaluated by: GHActionsPoliciesPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHActionsPolicies - CanApprovePullRequestReviews Equals False \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3669,22 +3669,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "0A887DF30F07F801C37D81A5D92B1C054FB427E7AF579C0A94B8A2875A9E9206",
+            "gdnPrimarySignature": "1ED58638D8E62942596E8A0425498B55A4B4156E23F485AE8D3E6DEBC86DF029",
             "gdnAlternativeSignature0": "7AA4248403F80CAEA0C06D68D7341C368571740486845B1127CE260228284638"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "0A887DF30F07F801C37D81A5D92B1C054FB427E7AF579C0A94B8A2875A9E9206",
+            "gdnPrimarySignature": "1ED58638D8E62942596E8A0425498B55A4B4156E23F485AE8D3E6DEBC86DF029",
             "gdnAlternativeSignature0": "7AA4248403F80CAEA0C06D68D7341C368571740486845B1127CE260228284638"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceType": "ActionsPolicies",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/actionspolicies/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/actionspolicies/",
             "ResourceRefName": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceLink": "https://github.com/organizations/orginsecure/settings/actions",
             "EvaluationDetails": "Evaluated by: GHActionsPoliciesPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHActionsPolicies - AllowedActions NotEquals all \nAnyOf : NonCompliant : GHActionsPolicies - AllowedActions Equals local_only (Actual: selected)\nAnyOf : NonCompliant : GHActionsPolicies - IsAllowedOnlyGitHubSelectedActions Equals True (Actual: False)\nAnyOf : Compliant : GHActionsPolicies - IsAllowedSelectedActions Equals True \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3718,22 +3718,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "252AC7B831ABCBBB8866BD1E489E9EB6716A1F5883C9F0719739D9B3C902358B",
+            "gdnPrimarySignature": "0D33E2A91661733ECB16BD810A6F76003243523CCFCF8E446A3BAACC63DCE648",
             "gdnAlternativeSignature0": "22C2EDBBE751CBC6540FD0EB8899D9C3028A152ED22BFE7A4EB5C0BEE24F2DCD"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "252AC7B831ABCBBB8866BD1E489E9EB6716A1F5883C9F0719739D9B3C902358B",
+            "gdnPrimarySignature": "0D33E2A91661733ECB16BD810A6F76003243523CCFCF8E446A3BAACC63DCE648",
             "gdnAlternativeSignature0": "22C2EDBBE751CBC6540FD0EB8899D9C3028A152ED22BFE7A4EB5C0BEE24F2DCD"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceType": "ActionsSecrets",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/actionssecrets/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/actionssecrets/",
             "ResourceRefName": "Organization - GitHub Secure Actions - General (1.0.0)",
             "ResourceLink": "https://github.com/organizations/orginsecure/settings/secrets/actions",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHActionsSecrets - TotalCount LessThan 11 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3767,22 +3767,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9CCC73DC277E23A356B286C869E9F74368532DCC050491409E21AD5E6E04C8B1",
+            "gdnPrimarySignature": "7B9A12D5E1A2D25212790CF190A48DB040DF6266D03A3B7CF637C36804BF7B66",
             "gdnAlternativeSignature0": "E8A7C3671B3FFC108EA212D6D5BD265F66C6A4A9A78E42365E4B1B181AF7F39E"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9CCC73DC277E23A356B286C869E9F74368532DCC050491409E21AD5E6E04C8B1",
+            "gdnPrimarySignature": "7B9A12D5E1A2D25212790CF190A48DB040DF6266D03A3B7CF637C36804BF7B66",
             "gdnAlternativeSignature0": "E8A7C3671B3FFC108EA212D6D5BD265F66C6A4A9A78E42365E4B1B181AF7F39E"
           },
           "properties": {
             "PolicyInitiative": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceType": "Organization",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/organization/257040923/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/organization/257040923/",
             "ResourceRefName": "Organization - GitHub Secure Organizations - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure",
             "EvaluationDetails": "Evaluated by: GHOrganizationPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHOrganization - MembersCanForkPrivateRepositories Equals False \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3816,22 +3816,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "3F2C77362C42A5A44323918A2284DE8AA5E47D4A97E17A972DF47DB3E7CBF196",
+            "gdnPrimarySignature": "C93BDB94D2A384318F7ED136BDE2CC37A7C9A3B33DC0F70F95C5FF14AB7C65C7",
             "gdnAlternativeSignature0": "D6AC1A4F31CA3F3F8319F775CB8844E72026D67EB0BAE3FFF56A646F8AC548E0"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "3F2C77362C42A5A44323918A2284DE8AA5E47D4A97E17A972DF47DB3E7CBF196",
+            "gdnPrimarySignature": "C93BDB94D2A384318F7ED136BDE2CC37A7C9A3B33DC0F70F95C5FF14AB7C65C7",
             "gdnAlternativeSignature0": "D6AC1A4F31CA3F3F8319F775CB8844E72026D67EB0BAE3FFF56A646F8AC548E0"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/vulnerabilityalerts/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/vulnerabilityalerts/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalCritical Equals 0 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3865,22 +3865,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "FC9774F6F8F2BF8C375389EC4334112287AEE9D4296C1D2CAD770656FA29F802",
+            "gdnPrimarySignature": "3BC9675BDCEA6062932094E3E1EB412ECA387DE9A72B1C4D475ACFF3D933AB97",
             "gdnAlternativeSignature0": "9010C9144F7687D99BB16E65E736D029916E861F34C160EA47BC9DDF0370630D"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "FC9774F6F8F2BF8C375389EC4334112287AEE9D4296C1D2CAD770656FA29F802",
+            "gdnPrimarySignature": "3BC9675BDCEA6062932094E3E1EB412ECA387DE9A72B1C4D475ACFF3D933AB97",
             "gdnAlternativeSignature0": "9010C9144F7687D99BB16E65E736D029916E861F34C160EA47BC9DDF0370630D"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/vulnerabilityalerts/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/vulnerabilityalerts/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalCritical Equals 0 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3914,22 +3914,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "3ACB3F8F1A7E32614BC9674B762506F5B18D4FDA3FCBC9A6D473A6D1F57D7D48",
+            "gdnPrimarySignature": "BE3F10A95D475159B874E2EA989EAFA5F45CDD324B3E91112F442682FB19E517",
             "gdnAlternativeSignature0": "AB51050526A0836DE3C2D78FF54A723AF8270C08572F5756F00413C9844702EB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "3ACB3F8F1A7E32614BC9674B762506F5B18D4FDA3FCBC9A6D473A6D1F57D7D48",
+            "gdnPrimarySignature": "BE3F10A95D475159B874E2EA989EAFA5F45CDD324B3E91112F442682FB19E517",
             "gdnAlternativeSignature0": "AB51050526A0836DE3C2D78FF54A723AF8270C08572F5756F00413C9844702EB"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/vulnerabilityalerts/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/vulnerabilityalerts/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalCritical Equals 0 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -3963,22 +3963,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "AAB87BCE97113E9C50ED3CC04D9401E70C3454C346C16EB3942D7D59733A9206",
+            "gdnPrimarySignature": "D5C0698CD39F1C8C142F235E344D9E89EF389F1472A2CF08C57A1DE1F6547AE0",
             "gdnAlternativeSignature0": "4969215C2A9CBB7C568CEBE23389F1FB78090DBDC10CEFB21AF1AC74C34390E4"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "AAB87BCE97113E9C50ED3CC04D9401E70C3454C346C16EB3942D7D59733A9206",
+            "gdnPrimarySignature": "D5C0698CD39F1C8C142F235E344D9E89EF389F1472A2CF08C57A1DE1F6547AE0",
             "gdnAlternativeSignature0": "4969215C2A9CBB7C568CEBE23389F1FB78090DBDC10CEFB21AF1AC74C34390E4"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/vulnerabilityalerts/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/vulnerabilityalerts/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalHigh Equals 0 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4012,22 +4012,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "2A18C2C14544DEF4F858AEAA59A93DAD2680D09086CF97CF1F56B0EFD5DF3A75",
+            "gdnPrimarySignature": "93691EBB9B4BB336E1D535F55A60A0AF2100C69A4CFEC0D4EB95042A2CAD1499",
             "gdnAlternativeSignature0": "9984106806FD6457E921DE06082BA9D17620B13DBECA6039BB653FA54B3F5180"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "2A18C2C14544DEF4F858AEAA59A93DAD2680D09086CF97CF1F56B0EFD5DF3A75",
+            "gdnPrimarySignature": "93691EBB9B4BB336E1D535F55A60A0AF2100C69A4CFEC0D4EB95042A2CAD1499",
             "gdnAlternativeSignature0": "9984106806FD6457E921DE06082BA9D17620B13DBECA6039BB653FA54B3F5180"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "VulnerabilityAlerts",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/vulnerabilityalerts/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/vulnerabilityalerts/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat/security",
             "EvaluationDetails": "Evaluated by: StandardPolicyEvaluationEngine`1\n-------------------------------------------------------\nAllOf : Compliant : GHRepositoryVulnerabilityAlerts - VulnerabilityAlerts.TotalHigh Equals 0 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4060,22 +4060,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "BC0B97296DD62765B98C0267DC00642AA5DC3542A16D4834BB1BAD4D7A6278FC",
+            "gdnPrimarySignature": "9D6DD6648BDC23BD025A0DE4D1C1F6870C0E08BD539499AB5CFCACDDB89762A6",
             "gdnAlternativeSignature0": "5FCEBC4CB4388116F74AACDF9E0D6BED8BD9255166D65C3EBB02E371EF6E5E58"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "BC0B97296DD62765B98C0267DC00642AA5DC3542A16D4834BB1BAD4D7A6278FC",
+            "gdnPrimarySignature": "9D6DD6648BDC23BD025A0DE4D1C1F6870C0E08BD539499AB5CFCACDDB89762A6",
             "gdnAlternativeSignature0": "5FCEBC4CB4388116F74AACDF9E0D6BED8BD9255166D65C3EBB02E371EF6E5E58"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - Size LessThan 1048576 \nAllOf : Compliant : GHRepository - Size LessThan 5242880 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4108,22 +4108,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "7901E8331BAC46C76DD2D4BFF318C4AD1531C4A24D4454FAD2D6AF2A7659CFA9",
+            "gdnPrimarySignature": "90090445B9CD6E2C97E226F479AF1F3CD8694F3A6E6354931CF03637E73FDB25",
             "gdnAlternativeSignature0": "D59130E20C25264009E7E5DA21F7A12F5EF2A07680E9E493EE49B3C33CE6B54D"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "7901E8331BAC46C76DD2D4BFF318C4AD1531C4A24D4454FAD2D6AF2A7659CFA9",
+            "gdnPrimarySignature": "90090445B9CD6E2C97E226F479AF1F3CD8694F3A6E6354931CF03637E73FDB25",
             "gdnAlternativeSignature0": "D59130E20C25264009E7E5DA21F7A12F5EF2A07680E9E493EE49B3C33CE6B54D"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - Size LessThan 1048576 \nAllOf : Compliant : GHRepository - Size LessThan 5242880 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4156,22 +4156,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "AC03D8824BEB4B4EB61004C566C7C993E41CDF7AE4224BA6B04D219F67506753",
+            "gdnPrimarySignature": "CF30537D423C962E4204ECF4A53F2C1B2C9BBBDBB25219EB82E534AA21E1C0F3",
             "gdnAlternativeSignature0": "7AD2E7E40C9CCE0A6948939657611783D88D95D77C5AA2201419050F3431CBDB"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "AC03D8824BEB4B4EB61004C566C7C993E41CDF7AE4224BA6B04D219F67506753",
+            "gdnPrimarySignature": "CF30537D423C962E4204ECF4A53F2C1B2C9BBBDBB25219EB82E534AA21E1C0F3",
             "gdnAlternativeSignature0": "7AD2E7E40C9CCE0A6948939657611783D88D95D77C5AA2201419050F3431CBDB"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - Size LessThan 1048576 \nAllOf : Compliant : GHRepository - Size LessThan 5242880 \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4204,22 +4204,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "D0A134433CDCA30780549A5D9052130655733A9D2FB0C300A21C2838C17F7347",
+            "gdnPrimarySignature": "F8651496B83EB437E2F921C3118F5C273B2304D982C09BE647301279CA0DFFE7",
             "gdnAlternativeSignature0": "A2AFC59B04A8E8142C0E73F749897CC1135C5BB61B2BD81402B09698A88E792D"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "D0A134433CDCA30780549A5D9052130655733A9D2FB0C300A21C2838C17F7347",
+            "gdnPrimarySignature": "F8651496B83EB437E2F921C3118F5C273B2304D982C09BE647301279CA0DFFE7",
             "gdnAlternativeSignature0": "A2AFC59B04A8E8142C0E73F749897CC1135C5BB61B2BD81402B09698A88E792D"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141921790/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141921790/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/Cad4DevOps-Tests",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - DefaultBranchName Match (main|master) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4252,22 +4252,22 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "9A54DC5A10D13736A81794D8021D856A026C0C28B7DEEE5846FB5225C9D9F975",
+            "gdnPrimarySignature": "C0AA683897DA72D0F9ED3DD9D258DD6628166BB43864451E54D848F8AAC90BC6",
             "gdnAlternativeSignature0": "85AEE32F335DB8F916FF2CFB1C52C0A0D23845A8142EE9617AB97FE21BDCD518"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "9A54DC5A10D13736A81794D8021D856A026C0C28B7DEEE5846FB5225C9D9F975",
+            "gdnPrimarySignature": "C0AA683897DA72D0F9ED3DD9D258DD6628166BB43864451E54D848F8AAC90BC6",
             "gdnAlternativeSignature0": "85AEE32F335DB8F916FF2CFB1C52C0A0D23845A8142EE9617AB97FE21BDCD518"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141516439/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141516439/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/juice-shop",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - DefaultBranchName Match (main|master) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         },
         {
@@ -4300,36 +4300,36 @@
             }
           ],
           "partialFingerprints": {
-            "gdnPrimarySignature": "8BA4B2E2A05B673DD8A373866F23465AF847F24E3E520A2FD50C284BD6981F34",
+            "gdnPrimarySignature": "CD17E4ED4744133AE10DE58B00E58F5B01B863C0893750316454CA77C12B5886",
             "gdnAlternativeSignature0": "91FE52E596C9A05577A4477296210F753444BA67E8335F0CF5C68F728BB9BA89"
           },
           "fingerprints": {
-            "gdnPrimarySignature": "8BA4B2E2A05B673DD8A373866F23465AF847F24E3E520A2FD50C284BD6981F34",
+            "gdnPrimarySignature": "CD17E4ED4744133AE10DE58B00E58F5B01B863C0893750316454CA77C12B5886",
             "gdnAlternativeSignature0": "91FE52E596C9A05577A4477296210F753444BA67E8335F0CF5C68F728BB9BA89"
           },
           "properties": {
             "PolicyInitiative": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceType": "Repository",
-            "ResourceRefId": "organization/1a51166c-9ef3-40da-af4a-b91108a22c79/repository/1141589081/",
+            "ResourceRefId": "organization/22bf5203-f242-49e5-a4d3-e4be9e9376be/repository/1141589081/",
             "ResourceRefName": "Repository - GitHub Secure Repositories - General (1.0.0)",
             "ResourceLink": "https://github.com/orginsecure/pygoat",
             "EvaluationDetails": "Evaluated by: GHRepositoryPolicyEvaluationEngine\n-------------------------------------------------------\nAllOf : Compliant : GHRepository - DefaultBranchName Match (main|master) \n-------------------------------------------------------\nResult: Compliant\n",
             "ComplianceState": 1,
-            "LastEvaluated": "2026-04-26T20:43:02.3116097"
+            "LastEvaluated": "2026-04-26T23:19:29.2897256"
           }
         }
       ],
       "automationDetails": {
         "description": {
-          "text": "SARIF-GitHub-Export-Test-20260426-204259\n- Overview: Resource Compliance: 29.3% (22 out of 75)\n---------------------------------------------------------------\nDevOps Security Governance Overview - Non-Compliant Resources\n---------------------------------------------------------------\nSeverity: All\nResources: 70.7% (53 out of 75)\nAssignments: 75% (3 out of 4)\nInitiatives: 75% (3 out of 4)\nPolicies: 69% (25 out of 36)\n---------------------------------------------------------------\nSeverity: Critical\nResources: 67.4% (29 out of 43)\nAssignments: 75% (3 out of 4)\nInitiatives: 75% (3 out of 4)\nPolicies: 42% (15 out of 36)\n---------------------------------------------------------------\nSeverity: High\nResources: 80% (8 out of 10)\nAssignments: 100% (3 out of 3)\nInitiatives: 75% (3 out of 4)\nPolicies: 11% (4 out of 36)\n---------------------------------------------------------------\nSeverity: Medium\nResources: 60% (9 out of 15)\nAssignments: 100% (1 out of 1)\nInitiatives: 25% (1 out of 4)\nPolicies: 8% (3 out of 36)\n---------------------------------------------------------------\nSeverity: Low\nResources: 100% (7 out of 7)\nAssignments: 100% (2 out of 2)\nInitiatives: 50% (2 out of 4)\nPolicies: 8% (3 out of 36)\n---------------------------------------------------------------\nDevOps Metadata Explorer - Inventory\n---------------------------------------------------------------\nEnterprises: 1\nOrganizations: 1\nProjects: 0\nRepositories: 3\n---------------------------------------------------------------\nOrganization: orginsecure\n- Total Resources: 21\n- VulnerabilityAlerts: 6\n- ActionsWorkflows: 3\n- BranchProtectionRules: 3\n- Repository: 3\n- RepositoryLanguages: 3\n- ActionsPolicies: 1\n- ActionsSecrets: 1\n- Organization: 1\n---------------------------------------------------------------\nData Size (MB):\n---------------------------------------------------------------\n- Security Governance Data: 0.41524887\n- Resource Overview Data: 0.010518074\n- Resource Inventory Data: 0.11475563\n- Security Permissions Data: 1.9073486E-06\n---------------------------------------------------------------\n\n- Logs: Automation Tasks:\n-----------------------------------------------------\nId: 7e0fcc20-2c49-456d-b75a-dcb01c4bee7f\nTask: Data Resources\nRun Date: Sun, 26 Apr 2026 20:42:59 GMT\nDuration: 0:02\nStatus: Completed\nDetails: Tenant = aa7af1ff*** - Total GH Count = 21 - Organizations Discovered: 31, Organizations: 1, Organizations Resources: 5, Repositories Resources: 15; -> GitHub API: 14 calls; Rate limits - Total waiting time for all threads/calls: 0 secs; Retries: 0; Timeouts: 0\n | \nCalculated Resource Overviews: 18\n-----------------------------------------------------\n-----------------------------------------------------\nId: 76fdc1d4-053e-400d-a2d2-3867a50079e5\nTask: Policy Evaluation\nRun Date: Sun, 26 Apr 2026 20:43:02 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Total Resources = 75 evaluated - Compliant = 22, Non-Compliant = 53, Organizations = 1, Management Groups = 1, Policy Assignments = 4, Policy Initiatives = 4, Policy Definitions = 33, Resources not evaluated = 0 not enrolled in the current billing plan.\n-----------------------------------------------------\n-----------------------------------------------------\nId: 74e55063-cd69-4bb8-95f1-c311ff42fa99\nTask: Policy Compliance\nRun Date: Sun, 26 Apr 2026 20:43:02 GMT\nDuration: 0:00\nStatus: Completed\nDetails: DevOps Shield - DevSecOps Assessment Report: 1e0c3b70-6782-4906-8288-053feb1f7de0, Total Compliances = 4 assignments calculated - Compliant Assignments  = 1, Non-Compliant Assignments = 3, Compliant Initiatives  = 4, Non-Compliant Initiatives = 3, Compliant Policies  = 13, Non-Compliant Policies = 25, Compliant Resources  = 22, Non-Compliant Resources = 53\n-----------------------------------------------------\n-----------------------------------------------------\nId: 1d7dbdac-29a5-4b36-aa47-06e6a0056fe7\nTask: Log Analytics\nRun Date: Sun, 26 Apr 2026 20:43:02 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Total Count = 100, DataResource: 21, PolicyEvaluation: 75, PolicyCompliance: 4\n-----------------------------------------------------\n-----------------------------------------------------\nId: 64a1fb25-8a48-4092-8b15-3a6f6a9c8ee5\nTask: Data Cleanup\nRun Date: Sun, 26 Apr 2026 20:43:02 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Data Cleanup Log: 0 Automation Tasks, 0 Policy Compliances, 0 Policy Evaluations, 0 Resources, Reset Data Cache\n-----------------------------------------------------\n-----------------------------------------------------\nId: 3a3b26e1-fdac-4186-88c1-91e3ea05fc46\nTask: DevSecOps Automation\nRun Date: Sun, 26 Apr 2026 20:43:02 GMT\nDuration: 0:00\nStatus: Completed\nDetails: DevSecOps Automation - Apply AppSec Configurations Report: -> No changes to apply.\n-----------------------------------------------------\n"
+          "text": "SARIF-GitHub-Export-Test-20260426-231926\n- Overview: Resource Compliance: 29.3% (22 out of 75)\n---------------------------------------------------------------\nDevOps Security Governance Overview - Non-Compliant Resources\n---------------------------------------------------------------\nSeverity: All\nResources: 70.7% (53 out of 75)\nAssignments: 75% (3 out of 4)\nInitiatives: 75% (3 out of 4)\nPolicies: 69% (25 out of 36)\n---------------------------------------------------------------\nSeverity: Critical\nResources: 67.4% (29 out of 43)\nAssignments: 75% (3 out of 4)\nInitiatives: 75% (3 out of 4)\nPolicies: 42% (15 out of 36)\n---------------------------------------------------------------\nSeverity: High\nResources: 80% (8 out of 10)\nAssignments: 100% (3 out of 3)\nInitiatives: 75% (3 out of 4)\nPolicies: 11% (4 out of 36)\n---------------------------------------------------------------\nSeverity: Medium\nResources: 60% (9 out of 15)\nAssignments: 100% (1 out of 1)\nInitiatives: 25% (1 out of 4)\nPolicies: 8% (3 out of 36)\n---------------------------------------------------------------\nSeverity: Low\nResources: 100% (7 out of 7)\nAssignments: 100% (2 out of 2)\nInitiatives: 50% (2 out of 4)\nPolicies: 8% (3 out of 36)\n---------------------------------------------------------------\nDevOps Metadata Explorer - Inventory\n---------------------------------------------------------------\nEnterprises: 1\nOrganizations: 1\nProjects: 0\nRepositories: 3\n---------------------------------------------------------------\nOrganization: orginsecure\n- Total Resources: 21\n- VulnerabilityAlerts: 6\n- ActionsWorkflows: 3\n- BranchProtectionRules: 3\n- Repository: 3\n- RepositoryLanguages: 3\n- ActionsPolicies: 1\n- ActionsSecrets: 1\n- Organization: 1\n---------------------------------------------------------------\nData Size (MB):\n---------------------------------------------------------------\n- Security Governance Data: 0.41524887\n- Resource Overview Data: 0.010518074\n- Resource Inventory Data: 0.11475372\n- Security Permissions Data: 1.9073486E-06\n---------------------------------------------------------------\n\n- Logs: Automation Tasks:\n-----------------------------------------------------\nId: b79801b1-658a-4950-bbb5-bc00b9eed7bf\nTask: Data Resources\nRun Date: Sun, 26 Apr 2026 23:19:27 GMT\nDuration: 0:02\nStatus: Completed\nDetails: Tenant = aa7af1ff*** - Total GH Count = 21 - Organizations Discovered: 31, Organizations: 1, Organizations Resources: 5, Repositories Resources: 15; -> GitHub API: 14 calls; Rate limits - Total waiting time for all threads/calls: 0 secs; Retries: 0; Timeouts: 0\n | \nCalculated Resource Overviews: 18\n-----------------------------------------------------\n-----------------------------------------------------\nId: d42c1434-7f6e-4b46-a476-5bc693d0f75b\nTask: Policy Evaluation\nRun Date: Sun, 26 Apr 2026 23:19:29 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Total Resources = 75 evaluated - Compliant = 22, Non-Compliant = 53, Organizations = 1, Management Groups = 1, Policy Assignments = 4, Policy Initiatives = 4, Policy Definitions = 33, Resources not evaluated = 0 not enrolled in the current billing plan.\n-----------------------------------------------------\n-----------------------------------------------------\nId: dae36e90-03c8-4878-a3b5-651ee7109fe1\nTask: Policy Compliance\nRun Date: Sun, 26 Apr 2026 23:19:29 GMT\nDuration: 0:00\nStatus: Completed\nDetails: DevOps Shield - DevSecOps Assessment Report: 7c331b63-99b7-4787-ba7d-d8d0f98326dc, Total Compliances = 4 assignments calculated - Compliant Assignments  = 1, Non-Compliant Assignments = 3, Compliant Initiatives  = 4, Non-Compliant Initiatives = 3, Compliant Policies  = 13, Non-Compliant Policies = 25, Compliant Resources  = 22, Non-Compliant Resources = 53\n-----------------------------------------------------\n-----------------------------------------------------\nId: e1934b66-10aa-4523-9792-271171994b5a\nTask: Log Analytics\nRun Date: Sun, 26 Apr 2026 23:19:29 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Total Count = 100, DataResource: 21, PolicyEvaluation: 75, PolicyCompliance: 4\n-----------------------------------------------------\n-----------------------------------------------------\nId: 2900f361-8e25-4039-b184-387427b7d048\nTask: Data Cleanup\nRun Date: Sun, 26 Apr 2026 23:19:29 GMT\nDuration: 0:00\nStatus: Completed\nDetails: Data Cleanup Log: 0 Automation Tasks, 0 Policy Compliances, 0 Policy Evaluations, 0 Resources, Reset Data Cache\n-----------------------------------------------------\n-----------------------------------------------------\nId: 173c89ed-1fd4-4aae-9a00-afcaf255dee1\nTask: DevSecOps Automation\nRun Date: Sun, 26 Apr 2026 23:19:29 GMT\nDuration: 0:00\nStatus: Completed\nDetails: DevSecOps Automation - Apply AppSec Configurations Report: -> No changes to apply.\n-----------------------------------------------------\n"
         },
         "id": "DevOpsShield-SecurityScanner",
-        "guid": "1e0c3b70-6782-4906-8288-053feb1f7de0"
+        "guid": "7c331b63-99b7-4787-ba7d-d8d0f98326dc"
       },
       "defaultEncoding": "System.Text.UTF8Encoding+UTF8EncodingSealed",
       "columnKind": "utf16CodeUnits",
       "properties": {
-        "toolInfoId": "DevOpsShield-SecurityScanner>>0>>202604262043"
+        "toolInfoId": "DevOpsShield-SecurityScanner>>0>>202604262320"
       }
     }
   ],
